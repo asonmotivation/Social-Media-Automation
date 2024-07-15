@@ -1,0 +1,25 @@
+<h1>Post Management</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Scheduled At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% posts.forEach(post => { %>
+      <tr>
+        <td><%= post.content %></td>
+        <td><%= post.scheduledAt.toLocaleString() %></td>
+        <td>
+          <a href="/post-management/<%= post._id %>">Edit</a>
+          <form action="/post-management/<%= post._id %>?_method=DELETE" method="post">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>

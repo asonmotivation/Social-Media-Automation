@@ -1,0 +1,15 @@
+/* Make the calendar full-width on large screens */
+@media (min-width: 768px) {
+  .calendar-container {
+    width: 100%;
+  }
+}
+
+/* Make the calendar responsive on smaller screens */
+@media (max-width: 767px) {
+  .calendar-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+  }
+}

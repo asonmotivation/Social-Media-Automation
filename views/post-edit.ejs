@@ -1,0 +1,11 @@
+<h1>Edit Post</h1>
+
+<form action="/post-management/<%= post._id %>" method="post">
+      <label for="content">Content:</label>
+      <textarea name="content" id="content"><%= post.content %></textarea>
+      <br>
+      <label for="scheduledAt">Scheduled At:</label>
+      <input type="datetime-local" name="scheduledAt" value="<%= post.scheduledAt.toLocaleString() %>">
+      <br>
+      <button type="submit">Save Changes</button>
+</form>

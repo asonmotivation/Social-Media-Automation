@@ -9,9 +9,16 @@
     "author": "Arpit Vasani, Parshwa Kapadia",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^6.0.1"
+        "electron": "^31.2.0"
     },
     "dependencies": {
-        "puppeteer-core": "^1.19.0"
+        "@fullcalendar/daygrid": "^6.1.15",
+        "@fullcalendar/interaction": "^6.1.15",
+        "@fullcalendar/react": "^6.1.15",
+        "@fullcalendar/timegrid": "^6.1.15",
+        "puppeteer-core": "^1.19.0",
+        "request": "^2.88.2",
+        "rimraf": "^6.0.1",
+        "uuid": "^10.0.0"
     }
 }
